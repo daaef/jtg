@@ -21241,6 +21241,20 @@ body {
     -o-object-position: center;
        object-position: center; }
 
+#elearn {
+  height: 90vh;
+  background: url(../img/bld-layer.png) no-repeat;
+  background-size: cover; }
+  #elearn .play-btn {
+    height: 100px; }
+
+.theme-color {
+  color: #ee851c; }
+
+.uk-button-theme {
+  color: #ffffff;
+  background: #ee851c; }
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
