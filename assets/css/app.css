@@ -7128,9 +7128,9 @@ header {
     left: 0;
     right: 0;
     z-index: 1;
-    background-image: url(../img/behindBG.jpg);
+    background-image: url(../img/mainBG.jpg);
     background-size: contain;
-    background-position: 160% 40%;
+    background-position: 120% 40%;
     /*
     -webkit-clip-path: url(#clipping);
     clip-path: url(#clipping);*/
@@ -7144,21 +7144,59 @@ header {
             mask-size: 100% auto;
     -webkit-transition: all 1s;
     transition: all 1s; }
+    @media (max-width: 1279px) {
+      header .mainbg-overlay {
+        -webkit-mask-size: 70% auto;
+                mask-size: 70% auto; } }
+    @media (max-width: 1023px) {
+      header .mainbg-overlay {
+        -webkit-mask-size: 50% auto;
+                mask-size: 50% auto; } }
+    @media (max-width: 959px) {
+      header .mainbg-overlay {
+        -webkit-mask: none;
+                mask: none;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.11; } }
     header .mainbg-overlay:hover {
       -webkit-mask-size: 120% auto;
               mask-size: 120% auto;
       -webkit-mask-position: 60% 40%;
               mask-position: 60% 40%; }
   header .main-content {
-    height: 100vh;
+    min-height: 100vh;
     max-width: 80%;
     margin: 0 auto; }
     header .main-content * {
       margin: 0;
       padding: 0; }
+    @media (max-width: 959px) {
+      header .main-content {
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        position: relative;
+        z-index: 2;
+        min-height: 70vh; }
+        header .main-content h2 {
+          font-size: 2rem; }
+        header .main-content p {
+          font-size: 1rem; } }
+  @media (max-width: 959px) {
+    header {
+      -webkit-clip-path: none;
+              clip-path: none;
+      min-height: 70vh; } }
 
 .color-white {
   color: white; }
+
+@media (max-width: 959px) {
+  .uk-grid {
+    margin: 0; } }
 
 .uk-sticky {
   position: absolute;
@@ -7170,6 +7208,11 @@ header {
     transition: all .5s; }
     .uk-sticky nav.uk-navbar-container.uk-navbar-sticky {
       background: #071e3e; }
+  .uk-sticky .uk-navbar-nav li.uk-active a {
+    font-weight: 600;
+    color: #ffffff; }
+  .uk-sticky .uk-navbar-nav li a {
+    color: rgba(255, 255, 255, 0.74); }
   .uk-sticky .uk-logo img {
     height: 50px;
     width: 100px;
@@ -7178,6 +7221,59 @@ header {
   .uk-sticky .uk-logo .logo-text {
     font-size: 1rem;
     font-weight: 100;
+    color: #ffffff; }
+
+.nav-hide {
+  display: block; }
+  @media (max-width: 959px) {
+    .nav-hide {
+      display: none; } }
+
+.toggle-hide {
+  display: none; }
+  @media (max-width: 959px) {
+    .toggle-hide {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; } }
+
+.main-footer {
+  min-height: 300px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #071e3e;
+  position: relative; }
+  .main-footer > * {
+    color: #ffffff; }
+
+.sub-footer {
+  min-height: 80px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #07172e;
+  position: relative; }
+  .sub-footer > * {
     color: #ffffff; }
 
 @-webkit-keyframes mymove {
@@ -21231,7 +21327,10 @@ body {
       -ms-transform: scaleY(1.2);
           transform: scaleY(1.2);
   position: relative;
-  height: 70vh; }
+  min-height: 70vh; }
+  @media (max-width: 959px) {
+    #goals .goalpic {
+      margin-top: 60px; } }
   #goals .goalpic img {
     position: absolute;
     top: 0;
@@ -21254,6 +21353,158 @@ body {
 .uk-button-theme {
   color: #ffffff;
   background: #ee851c; }
+
+@media (min-width: 910px) {
+  .pl-scr-half {
+    padding-left: calc((100vw / 2) - (450px)); }
+  .pr-scr-half {
+    padding-right: calc((100vw / 2) - (450px)); } }
+
+.card-grid {
+  min-height: 480px;
+  padding-bottom: 50px;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .card-grid .left-mnt {
+    position: relative;
+    min-height: 400px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-right: 50px; }
+    @media (max-width: 959px) {
+      .card-grid .left-mnt {
+        padding: 50px;
+        top: 0;
+        min-height: 100px; } }
+    .card-grid .left-mnt > div {
+      position: relative;
+      z-index: 5; }
+      .card-grid .left-mnt > div p:not(.uk-margin-top) {
+        margin: 0; }
+    .card-grid .left-mnt:before {
+      content: '';
+      width: 105%;
+      position: absolute;
+      left: 0;
+      height: 100%;
+      background: #071e3e; }
+  .card-grid .right-mnt {
+    position: relative;
+    min-height: 400px;
+    top: 100px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 30px; }
+    @media (max-width: 959px) {
+      .card-grid .right-mnt {
+        padding: 50px;
+        top: 0;
+        min-height: 100px; } }
+    .card-grid .right-mnt .uk-slideshow-items {
+      height: 280px !important; }
+      @media (max-width: 959px) {
+        .card-grid .right-mnt .uk-slideshow-items {
+          min-height: 400px !important; }
+          .card-grid .right-mnt .uk-slideshow-items .uk-active {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+                -ms-flex-align: center;
+                    align-items: center; } }
+    .card-grid .right-mnt > div {
+      padding: 50px 0; }
+    .card-grid .right-mnt .comment-card {
+      height: auto;
+      position: relative;
+      padding: 30px 0px 30px 30px; }
+      .card-grid .right-mnt .comment-card .comment-img {
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background: #ffffff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        z-index: 2; }
+        .card-grid .right-mnt .comment-card .comment-img img {
+          height: 90px;
+          width: 90px;
+          border-radius: 50%;
+          -o-object-fit: cover;
+             object-fit: cover; }
+      .card-grid .right-mnt .comment-card .comment-paper {
+        position: relative;
+        background: #ffffff;
+        height: auto;
+        width: 100%;
+        z-index: 1;
+        padding: 30px 30px 30px 80px; }
+        .card-grid .right-mnt .comment-card .comment-paper > * {
+          margin: 0;
+          text-align: left; }
+        .card-grid .right-mnt .comment-card .comment-paper hr {
+          margin: 10px 0; }
+    .card-grid .right-mnt:before {
+      content: '';
+      width: 105%;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      background: #ee851c;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 133, 28, 0.8)), to(rgba(238, 133, 28, 0.8))), url(../img/mapBG.png);
+      background-image: linear-gradient(rgba(238, 133, 28, 0.8), rgba(238, 133, 28, 0.8)), url(../img/mapBG.png); }
+
+.light-text {
+  line-height: 1;
+  text-transform: none;
+  color: white;
+  font-size: 1.1rem; }
+
+.bold-text {
+  line-height: 1;
+  text-transform: none;
+  color: white;
+  font-size: 1.5rem; }
+
+.uk-overlay-theme {
+  background: #ee851c; }
+  .uk-overlay-theme p {
+    color: #ffffff; }
+
+@media (max-width: 959px) {
+  #events .uk-inline-clip img {
+    max-height: 300px;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; } }
 
 * {
   -webkit-box-sizing: border-box;

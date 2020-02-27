@@ -3,6 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>JosTechGirls - Connecting Women In Tech</title>
     <link rel="stylesheet" href="assets/css/app.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
@@ -30,40 +32,40 @@
                             <span class="logo-text">JOS TECH GIRLS</span>
                         </a>
                     </div>
-                <div class="navbar-right">
-                    <ul class="uk-navbar-nav">
+                <div class="navbar-right nav-hide">
+                    <ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true">
                         <li>
-                            <a href="#">
+                            <a href="#home">
                                 Home
                             </a>
                         </li>
                         <li>
-                            <a href="#">
-                                Goals
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
+                            <a href="#about">
                                 About
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#goals">
+                                Goals
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#elearn">
                                 E-Learn
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#mentor">
                                 Be a Mentor
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#events">
                                 Events
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#documentary">
                                 Documentary
                             </a>
                         </li>
@@ -72,12 +74,16 @@
                                 Support
                             </a>
                         </li>-->
-                        <li>
+                        <!--<li>
                             <a href="#">
                                 Contact
                             </a>
-                        </li>
+                        </li>-->
                     </ul>
+                </div>
+    
+                <div class="uk-navbar-right toggle-hide">
+                    <a class="uk-navbar-toggle" uk-navbar-toggle-icon href=""></a>
                 </div>
             </nav>
         </div>
@@ -95,13 +101,13 @@
             <div class="uk-child-width-1-2@m" uk-grid>
                 <div class="pic-card">
                     <div class="main-pic">
-                        <img src="./assets/img/main-pic.png" alt="main-pic">
+                        <img src="./assets/img/behindBG.jpg" alt="main-pic">
                     </div>
                     <div class="little-pic">
                         <img src="./assets/img/white-logo.png" alt="little-circle-pic">
                     </div>
                     <div class="bottom-pic">
-                        <img src="./assets/img/bottom-pic.jpg" alt="bottom-pic">
+                        <img src="./assets/img/main-pic.png" alt="bottom-pic">
                     </div>
                 </div>
                 <div class="about-text uk-position-relative">
@@ -144,14 +150,17 @@
                         <p class="goal-text font-weight-700">Our Goals</p>
                         <hr>
                         <p class="goal goal-1 uk-margin-top uk-margin-bottom">
-                            Inspiring more women in the Tech community and making them a Beacon of Technology,  Women love role models.
+                            Inspiring more women in the Tech community and making them a Beacon of Technology, Women love
+                            role models.
                         </p>
                         <p class="goal goal-2">
-                            Connecting women in technology, with sole aim of understanding technology as the practical execution of use and familiarity of tools, machines, techniques, systems or methods in virtually any industry with the goal of solving problems effectively.
+                            Connecting women in technology, with sole aim of understanding technology as the practical
+                            execution of use and familiarity of tools, machines, techniques, systems or methods in virtually
+                            any industry with the goal of solving problems effectively.
                         </p>
                     </div>
                     <div class="goalpic">
-                        <img src="./assets/img/sideBG.jpg" alt="">
+                        <img src="./assets/img/bottom-pic.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -165,7 +174,8 @@
                     <h5 class="font-weight-700">
                         Get Free Courses & Resources <span class="theme-color">Online</span>
                     </h5>
-                    <p class="font-weight-400 uk-text-secondary">Gain access to free resources and courses to help you acquire new skills or sharpen your already acquired skils</p>
+                    <p class="font-weight-400 uk-text-secondary">Gain access to free resources and courses to help you
+                        acquire new skills or sharpen your already acquired skils</p>
                     <button class="uk-button uk-button-theme">
                         Start Now
                     </button>
@@ -174,7 +184,215 @@
         </div>
     </section>
     
+    <section id="mentor" class="uk-position-relative uk-padding-remove">
+        <div class="wrapper">
+            <div class="card-grid uk-flex uk-flex-wrap uk-child-width-1-2@m">
+                <div class="pl-scr-half left-mnt">
+                    <div>
+                        <p class="light-text">Jos Tech Girls</p>
+                        <p class="bold-text font-weight-700">Become A Mentor</p>
+                        <p class="uk-margin-top">
+                            You can Volunteer to tutor women in specific areas, such as Data sci and analysis, web
+                            application development, mobile application development, Digital skill and Graphic Design
+                        </p>
+                        <a class="uk-text-large color-white" href="#"> &lt;/ Join Us &gt;</a>
+                    </div>
+                </div>
+                <div class="pr-scr-half right-mnt">
+                    <div class="uk-width-1-1@l uk-text-right uk-position-relative">
+                        <p class="bold-text uk-text-bold uk-margin-remove">Our Mentors</p>
+                        <div class="uk-position-relative uk-visible-toggle" tabindex="-1"
+                             uk-slideshow="autoplay: true; autoplay-interval: 3000;animation: fade">
     
-<script src="assets/js/app.js"></script>
+                            <ul class="uk-slideshow-items">
+                                <li>
+                                    <div class="comment-card">
+                                        <div class="comment-img">
+                                            <img src="assets/img/kate.jpg" alt="">
+                                        </div>
+                                        <div class="comment-paper uk-text-secondary">
+                                            <h3 class="bold-text uk-text-secondary">Catherine Jonathan</h3>
+                                            <p class="light-text font-weight-100 uk-text-secondary">Software Developer</p>
+                                            <hr class="theme-color">
+                                            <p class="">
+                                                Learning Software development can be challenging but with the right mindset
+                                                anyone can do it
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="comment-card">
+                                        <div class="comment-img">
+                                            <img src="assets/img/hans.jpg" alt="">
+                                        </div>
+                                        <div class="comment-paper uk-text-secondary">
+                                            <h3 class="bold-text uk-text-secondary">Han Solo</h3>
+                                            <p class="light-text font-weight-100 uk-text-secondary">Jet Developer</p>
+                                            <hr class="theme-color">
+                                            <p class="">
+                                                Flying can be challenging but with the right mindset anyone can do it.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+    
+                            <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#"
+                               uk-slidenav-previous uk-slideshow-item="previous"></a>
+                            <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next
+                               uk-slideshow-item="next"></a>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="events" class="uk-position-relative">
+        <div class="wrapper">
+            <div class="uk-container uk-container-small">
+                <h3 class="uk-text-bold">Our Events</h3>
+                <div class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+                    <div>
+                        <button class="uk-button uk-button-text" uk-toggle="target: #modal-event1">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img class="uk-width-1-1@l" src="assets/img/wt.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-theme">
+                                        <p class="uk-h4 uk-margin-remove">Tech, Wine and Toast</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div>
+                        <button class="uk-button uk-button-text" uk-toggle="target: #modal-event2">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <img src="assets/img/ar.jpg" alt="">
+                                    <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-theme">
+                                        <p class="uk-h4 uk-margin-remove">Explore AR on heels</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="documentary" class="uk-position-relative uk-padding-remove-top">
+        <div class="wrapper">
+            <div class="uk-container uk-container-small">
+                <h4 class="uk-text-bold">Our Documentaries</h4>
+                <div class="uk-grid-small uk-child-width-auto@m" uk-grid>
+                    <div>
+                        <button class="uk-button uk-button-text" uk-toggle="target: #modal-event1">
+                            <div class="uk-text-center">
+                                <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/U8tK1Ew73SM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="main-footer">
+            <div class="uk-text-center">
+                <img src="assets/img/logo.png" alt="">
+                <h3 class="bold-text">Jos Tech Girls</h3>
+                <p class="light-text">jostechgirls@gmail.com</p>
+                <a href="" class="uk-icon-button uk-margin-small-right" uk-icon="twitter"></a>
+                <a href="" class="uk-icon-button  uk-margin-small-right" uk-icon="facebook"></a>
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div>
+                <p class="uk-margin-remove">Copyright © 2019 JosTechGirls. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <div id="modal-event1" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-flex-middle uk-width-1-1@m" uk-grid>
+                <div class="uk-position-relative uk-width-1-1@m" uk-slideshow="animation: fade">
+    
+                    <ul class="uk-slideshow-items"uk-height-viewport="offset-top: true; offset-bottom: 0">
+                        <li>
+                            <img src="assets/img/wt.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="assets/img/wt1.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="assets/img/wt2.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="assets/img/wt3.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="assets/img/wt4.jpg" alt="" uk-cover>
+                        </li>
+                    </ul>
+    
+                    <div class="uk-position-bottom-center uk-position-small">
+                        <ul class="uk-thumbnav">
+                            <li uk-slideshow-item="0"><a href="#"><img src="assets/img/wt.jpg" width="100" alt=""></a></li>
+                            <li uk-slideshow-item="1"><a href="#"><img src="assets/img/wt1.jpg" width="100" alt=""></a></li>
+                            <li uk-slideshow-item="2"><a href="#"><img src="assets/img/wt2.jpg" width="100" alt=""></a></li>
+                            <li uk-slideshow-item="3"><a href="#"><img src="assets/img/wt3.jpg" width="100" alt=""></a></li>
+                            <li uk-slideshow-item="4"><a href="#"><img src="assets/img/wt4.jpg" width="100" alt=""></a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-event2" class="uk-modal-full" uk-modal>
+        <div class="uk-modal-dialog">
+            <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-flex-middle uk-width-1-1@m" uk-grid>
+                <div class="uk-position-relative uk-width-1-1@m" uk-slideshow="animation: fade">
+    
+                    <ul class="uk-slideshow-items"uk-height-viewport="offset-top: true; offset-bottom: 0">
+                        <li>
+                            <img src="assets/img/ar.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="assets/img/ar1.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="assets/img/ar2.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="assets/img/ar3.jpg" alt="" uk-cover>
+                        </li>
+                        <li>
+                            <img src="assets/img/ar4.jpg" alt="" uk-cover>
+                        </li>
+                    </ul>
+    
+                    <div class="uk-position-bottom-center uk-position-small">
+                        <ul class="uk-thumbnav">
+                            <li uk-slideshow-item="0"><a href="#"><img src="assets/img/ar.jpg" width="100" alt=""></a></li>
+                            <li uk-slideshow-item="1"><a href="#"><img src="assets/img/ar1.jpg" width="100" alt=""></a></li>
+                            <li uk-slideshow-item="2"><a href="#"><img src="assets/img/ar2.jpg" width="100" alt=""></a></li>
+                            <li uk-slideshow-item="3"><a href="#"><img src="assets/img/ar3.jpg" width="100" alt=""></a></li>
+                            <li uk-slideshow-item="4"><a href="#"><img src="assets/img/ar4.jpg" width="100" alt=""></a></li>
+                        </ul>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div><script src="assets/js/app.js"></script>
 </body>
 </html>
